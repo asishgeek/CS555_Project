@@ -79,8 +79,12 @@ def verifyCommitment(randomA, randomB, commitment, graph):
   return True
 
 def prettyPrintMatrix(mat):
-  for row in mat:
-    print "%s\n"%("\t".join(map(str, row)))
+  return "\n".join(map(lambda row: "\t".join(map(str,row)),mat))
+
+def prettyPrintMatrixSpc(mat):
+  return "\n".join(map(lambda row: " ".join(map(str,row)),mat))
+#  for row in mat:
+#    print "%s\n"%("\t".join(map(str, row)))
 
 def _test():
   graph = [
