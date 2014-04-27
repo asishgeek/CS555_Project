@@ -18,6 +18,13 @@ G1 <--- (isomorphism: pi) ---> G' <---- (subgraph of) -- G2
 |                              v                          v
 ------->(isomorphism: pi')---> Q' <---- (subgraph of) --- Q
 
+3. Usage:
+---------
+The code consists of two process, prover and verifier.
+Invoking prover: ./prover.py <CommonInputFile> <ProverInputFile> [<Transcript location>]
+Invoking verifier: ./verifier.py <CommonInputFile> [<Transcript location>]
+where, the Transcript location specifies the directory where the transcripts are to be stored, defaults to current directory.
+
 2. Implementation:
 ------------------
 
