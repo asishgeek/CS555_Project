@@ -38,7 +38,8 @@ In each iteration the prover and verifier engage in the following protocol:
     The permutation alpha is a list which specifies the mapping between the vertices of G2 and Q. If we consider G1, G2, Q and 
     other graphs as adjacency matrices then Q[alpha[i]][alpha[j]] = G2[i][j].
   2. The prover then commits to the graph Q and sends the commitment to the verifier.
-  3. The verifier then tosses a coin and then sends the outcome of the toss to the prover.
+  3. The verifier then tosses a coin and then sends the outcome of the toss to the prover. In the code, rather than flipping a coin
+      the outcome (Heads/Tails) is accepted from the user.
   4. Depending on the outcome of the toss, the prover does one of the following:
     * If the result is Heads (H) then the prover reveals the commitment to the verifier and also the permutation alpha.
     * If the result is Tails (T) then the verifier computes the permutation pi' (called pi in code) between G1 and Q'.
